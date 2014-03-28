@@ -1,0 +1,20 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+	<id>com.cybage.NativePrinter</id>
+	<versionNumber>1</versionNumber>
+	<platforms>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>VibrationAndroidLibrary.jar</nativeLibrary>
+				<initializer>air.extensions.VibrationExtension</initializer>
+				<finalizer>air.extensions.VibrationExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libVibrationiOSLibrary.a</nativeLibrary>
+				<initializer>ExtInitializer</initializer>
+				<finalizer>ExtFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+	</platforms>
+</extension>
